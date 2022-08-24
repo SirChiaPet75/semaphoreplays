@@ -1,6 +1,6 @@
 ---
 - hosts: linux
-  user: ansbile
+  user: ansible
   become: no
   gather_facts: no
   tasks:
