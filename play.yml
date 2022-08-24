@@ -1,5 +1,6 @@
 ---
 - hosts: linux
+  user: ansbile
   become: no
   gather_facts: no
   tasks:
