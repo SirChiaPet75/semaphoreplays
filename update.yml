@@ -1,5 +1,6 @@
 ---
 - hosts: linux
+  become: yes
   serial: "{{ num_serial|default(1) }}"
   tasks:
     - name: apt-get update
