@@ -1,5 +1,5 @@
 ---
-- hosts: assets:k8s_controller:k8s_worker
+- hosts: linux
   serial: "{{ num_serial|default(1) }}"
   tasks:
     - name: apt-get update
