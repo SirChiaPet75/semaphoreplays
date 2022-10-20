@@ -10,11 +10,10 @@
   tasks:
   - name: get all
     fortios_configuration_fact:
-      #vdom: ""
+      vdom: ""
       access_token: "kwqjpshx4NH4nzcmyH3xcwNH0qQ85c"
       selector: log_custom-field
     register: output
-
   - name: print output
     debug:
       var: output.stdout_lines
