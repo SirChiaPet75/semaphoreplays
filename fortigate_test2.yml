@@ -1,8 +1,8 @@
 - hosts: fortigate01
   collections:
     - fortinet.fortios
-  - name: get all
-    fortios_configuration_fact:
-      vdom: ""
-      access_token: ""
-      selector: log_custom-field
+- name: get all
+  fortios_configuration_fact:
+    vdom: ""
+    access_token: ""
+    selector: log_custom-field
