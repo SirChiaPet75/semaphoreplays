@@ -9,6 +9,6 @@
    ansible_httpapi_port: 443
   tasks:
    - name: Get Config Elements
-     ansible.builtin.raw:
+     ansible.builtin.script:
        cmd: show system global
        cmd: show system interface
