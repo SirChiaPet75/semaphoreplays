@@ -1,5 +1,5 @@
 - hosts: fortigate01
-  gather_facts: false
+  #gather_facts: false
   tasks:
    - name: Get Config Elements
      ansible.netcommon.cli_command:
