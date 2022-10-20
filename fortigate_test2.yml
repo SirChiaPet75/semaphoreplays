@@ -2,5 +2,4 @@
   tasks:
    - name: Get Config Elements
      ansible.netcommon.cli_command:
-       cmd: show system global
-       cmd: show system interface
+       command: show system global
