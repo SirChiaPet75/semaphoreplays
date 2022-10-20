@@ -1,8 +1,14 @@
 - hosts: fortigate01
+  connection: httpapi
   collections:
     - fortinet.fortios
+  vars:
+    ansible_httpapi_use_ssl: yes
+    ansible_httpapi_validate_certs: no
+    ansible_httpapi_port: 443
+    vdom: "root"
 - name: get all
   fortios_configuration_fact:
     vdom: ""
-    access_token: ""
+    access_token: "kwqjpshx4NH4nzcmyH3xcwNH0qQ85c"
     selector: log_custom-field
