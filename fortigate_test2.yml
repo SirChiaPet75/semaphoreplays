@@ -1,5 +1,6 @@
 - hosts: fortigate01
-  #gather_facts: false
+  collections:
+    - fortinet.fortios
   tasks:
    - name: Get Config Elements
      ansible.netcommon.cli_command:
